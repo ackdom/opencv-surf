@@ -1,7 +1,0 @@
-@(list: Seq[String])
-
-<ul> 
-@list.map { str =>
-  <li>@str</li>
-} 
-</ul>
