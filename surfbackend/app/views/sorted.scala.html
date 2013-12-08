@@ -1,0 +1,15 @@
+@(original: String,map: Map[String, Integer])
+@import helper._
+
+
+@main("Welcome to Play") {
+<h2>Original Image</h2>
+<img width="150" src="/assets/images/@(original).jpg" name="@original" />  
+
+<h3>Matched Images</h3>
+<ul>
+@for((key, value) <- map){
+<li>
+<img width="150" src="/assets/images/@(key).jpg" name="@key" /> = @value  }
+</li>
+}

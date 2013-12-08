@@ -6,3 +6,4 @@
 *.ear
 surfbackend/.target
 .metadata
+surfbackend/public/images
