@@ -1,0 +1,16 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+@form(action = routes.Application.learn-picture, 'enctype -> "multipart/form-data") {
+    
+    <input type="file" name="picture">
+    
+    <p>
+        <input type="submit">
+    </p>
+    
+}
+}
+
+

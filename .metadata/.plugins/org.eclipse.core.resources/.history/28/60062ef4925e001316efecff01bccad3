@@ -1,0 +1,7 @@
+@(list: List[String])
+
+<ul>
+@for(p <- list) {
+  <li>@p</li>
+} 
+</ul>

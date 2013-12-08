@@ -1,0 +1,22 @@
+@(list: List[java.io.File])
+@import helper._
+
+
+@main("Welcome to Play") {
+
+<p>
+@for(p <- list) {
+  <img heigth="100" width="150" src="assets/images/@p.getName()" />
+} 
+</p>
+
+@form(action = routes.Application.learnPicture, 'enctype -> "multipart/form-data") {
+    
+    <input type="text" name="treshold" value="0.7">    
+    <input type="text" name="image" value="">
+    <p>
+        <input type="submit">
+    </p>
+    
+}
+}

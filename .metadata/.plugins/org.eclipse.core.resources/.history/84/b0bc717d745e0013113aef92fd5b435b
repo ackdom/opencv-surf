@@ -1,0 +1,33 @@
+package controllers;
+
+import java.util.Set;
+
+import play.mvc.Controller;
+import play.mvc.Result;
+import redis.clients.jedis.Jedis;
+import views.html.index;
+import views.html.helper.form;
+import views.html.learn;
+
+public class Application extends Controller {
+
+    public static Result index() {
+    	Jedis jedis = new Jedis("localhost");
+    	//jedis.sadd("mylist","a");
+    	//jedis.sadd("mylist","b");
+    	  Set<String> smembers = jedis.smembers("mylist");
+    	jedis.save();
+        return ok(index.render("Your new application is ready."));
+    }
+    
+    public static Result learnForm() {
+		return ok(learn.render(null, null, null));    	
+    }
+    
+    public static Result learnPicture() {
+    	return TODO;    	
+    }
+    
+    
+
+}

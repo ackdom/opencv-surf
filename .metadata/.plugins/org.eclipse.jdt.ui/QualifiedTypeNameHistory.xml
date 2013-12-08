@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="play.mvc.Result"/>
+<fullyQualifiedTypeName name="views.html.helper.form"/>
+<fullyQualifiedTypeName name="play.api.mvc.MultipartFormData.FilePart"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="play.api.mvc.MultipartFormData"/>
+<fullyQualifiedTypeName name="play.mvc.Http.MultipartFormData.FilePart"/>
+<fullyQualifiedTypeName name="play.mvc.Http.MultipartFormData"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+</qualifiedTypeNameHistroy>

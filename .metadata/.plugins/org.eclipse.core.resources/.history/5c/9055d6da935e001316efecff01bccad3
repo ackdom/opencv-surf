@@ -1,0 +1,7 @@
+@(list: List[File])
+
+<ul>
+@for(p <- list) {
+  <li>@p.getName()</li>
+} 
+</ul>
